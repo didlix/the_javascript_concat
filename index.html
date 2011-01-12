@@ -2,10 +2,12 @@
 <script language="Javascript" type="text/javascript">
 //<![CDATA[
 
-$('#form').submit(function(){
-	$('#fuckingfield').value(
-		$('#field1').value() + $('#field2').value() + $('#field3').value()
-	)
+$(function() {
+	$('#form').submit(function(){
+		$('#fuckingfield').value(
+			$('#field1').value() + $('#field2').value() + $('#field3').value()
+		)
+	});
 });
 
 //]]>
