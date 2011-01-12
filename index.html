@@ -1,11 +1,17 @@
-<script src="https://www.google.com/jsapi?key=ABQIAAAANvRq8aIOTXvV7b_31sHLThRJnONFT3rDtIHR47kF9TxEKOI-YBSqVhyGLnc3CWPZ9PAAHndbjA9EaQ" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
 <script language="Javascript" type="text/javascript">
 //<![CDATA[
-google.load("jquery","1.4.4");
+
+$('#form').submit(function(){
+	$('#fuckingfield').value(
+		$('#field1').value() + $('#field2').value() + $('#field3').value()
+	)
+});
+
 //]]>
 </script>
 
-<form action="post.php" method="post">
+<form action="post.php" method="post" id="form">
 	<p>
 		<label for="field1">Field 1</label><br />
 		<input type="text" name="field1" />
